@@ -9,7 +9,7 @@ root = Tk()
 # Defining the container size, width=400, height=240
 root.geometry('400x240')
 # Title of the container
-root.title('Love Calculator????')
+root.title('Love Calculator????__')
 
 # Function to calculate love percentage
 # between the user ans partner
