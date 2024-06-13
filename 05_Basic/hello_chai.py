@@ -5,7 +5,12 @@ def ashish (n):
 
 ashish("lemon tea");
 
-def extract (a):
-    print(a)
+chai_one = "lemon tea"
+chai_two = "ginger tea"
+chai_three = "masala tea"
 
-extract(43);
+
+
+    
+
+
