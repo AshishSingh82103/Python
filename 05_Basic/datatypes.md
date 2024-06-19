@@ -25,5 +25,3 @@
 - Advance : Decorators, Generators, Iterators, Comperhensions, context Mangers, MetaProgramming
 
 
-
-
