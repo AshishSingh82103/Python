@@ -1,7 +1,7 @@
 import random # For generating random numbers
 import sys #To exit the program
-import pygame #pip install pygame
-from pygame.locals import * 
+import pygame # type: ignore #pip install pygame
+from pygame.locals import *  # type: ignore
 # Global Variables for the game
 FPS = 32
 SCREENWIDTH = 289

@@ -1,7 +1,7 @@
 # pip install pyaudio
 
 import pyttsx3 #pip install pyttsx3
-import speech_recognition as sr #pip install speechRecognition
+import speech_recognition as sr # type: ignore #pip install speechRecognition
 import datetime
 import wikipedia #pip install wikipedia
 import webbrowser
@@ -110,4 +110,4 @@ if __name__ == "__main__":
                 print(e)
                 speak("Sorry my friend harry bhai. I am not able to send this email")    
         else:
-            print("No query matched")
+            print("No query matche")
