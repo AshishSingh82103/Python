@@ -61,6 +61,35 @@ else:
 
 
 # Q5:
+weather = "Sunny"
+if weather == "Sunny":
+    activity = "Go for a walk"
+elif weather == "Rainy":
+    activity = "Read abook"
+elif weather == "Snowy":
+    activity = "Build a snowman"
+
+print(activity)
+
+# Q6:
+speed = 85
+
+if speed < 3:
+    transport = "Walk"
+elif speed <= 15:
+    transport = "Bike"
+else:
+    transport = "Car"
+
+print("AI recommends you the transport of:",transport)
+
+# Q7:
+
+
+
+
+
+
 
 
 
