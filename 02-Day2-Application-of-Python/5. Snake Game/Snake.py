@@ -1,7 +1,7 @@
 author = 'CodeWithHarry'
 
 #Importing The Modules
-import pygame
+import pygame # type: ignore
 import random
 import os
 
