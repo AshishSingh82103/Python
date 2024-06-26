@@ -94,6 +94,29 @@ else:
 print("Order:", coffee)
 
 # Q8:
+password = "Secure3P@ss"
+
+if len(password) < 6:
+    strength = "Weak"
+elif len(password) <= 10:
+    strength = "Medium"
+else:
+    strength = "Strong"
+print("Password strength is:", strength)
+
+
+# Q9
+year = 2024
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print(year, "Leap year")
+
+else:
+    print(year, "is not a leap year")
+
+# Q10:
+
+ 
+
 
 
 
