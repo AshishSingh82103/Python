@@ -1,0 +1,8 @@
+import time
+
+# iterable object
+    
+
+
+
+
