@@ -8,12 +8,14 @@ def func():
 func()
 print(userName)
 
-x = 10 
-def func():
-    y = 5
-    print(x + y)
 
-func()
+x = 10 
+def func(y):
+    z = x + y 
+    return (x + y)
+
+result = func(1)
+print(result)
 
 
 
