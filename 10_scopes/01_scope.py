@@ -1,10 +1,22 @@
+#-------------------global scope = > when function not find the value in own scope then pick with global scope-----------------------
 userName = "singhashish"
 
-def name():
-    """
-    Purpose: 
-    """
-    
-# end def
+def func():
+    # userName = "Ashish"
+    print(userName)
 
-print("\033[93mdebug", next(debugN), " \033[0m")
+func()
+print(userName)
+
+x = 10 
+def func():
+    y = 5
+    print(x + y)
+
+func()
+
+
+
+
+
+
