@@ -29,7 +29,7 @@ print(my_user.model)
 print(my_user.full_name())
 
 
-# 3(Inheritance)
+# 3. (Inheritance)
 class Car:
     def __init__(self, brand, model):
         self.brand = brand
@@ -47,6 +47,33 @@ class ElectricCar(Car):
 my_tesla = ElectricCar("Tesla", "Model S", "85Kwh")
 print(my_tesla.model)
 print(my_tesla.full_name())
+
+# 4. (Encapsulation)
+
+class Car1():
+    def __init__(self, brand, model):
+        self.__brand = brand
+        self.model = model
+
+    def get_brand(self):
+        return self.__brand + "!"
+    
+    def full_name(self):
+        return f"{self.brand} {self.model}"
+    
+
+my_car = Car1("Toyota", "Corolla")
+# print(my_car.__brand)    
+print(my_car.get_brand())   
+# print(my_car.model)
+# print(my_car.full_name())
+
+
+
+
+
+
+
 
 
     
