@@ -127,13 +127,79 @@
 
 # 7. Static Method
 
+# class Car():
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.model = model
+
+#     def for_all(self):
+#         return f"{self.brand} {self.model}"
+    
+#     @staticmethod
+#     def genral_discription():
+#         return "Cars are means of transport"
+     
+
+#     def fuel_type(self):
+#         return "Electric discharge"
+    
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand, model)
+#         self.battery_size = battery_size
+
+#     def fuel_type(self):
+#         return "Electirc charge"
+    
+# my_car = Car("Tata", "Safari")
+# # print(my_car.genral_discription())
+# print(Car.genral_discription())
+
+
+# 8. Property Decorators
+# class Car():
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.__model = model
+
+#     def for_all(self):
+#         return f"{self.brand} {self.__model}"
+    
+#     @staticmethod
+#     def genral_discription():
+#         return "Cars are means of transport"
+     
+
+#     def fuel_type(self):
+#         return "Electric discharge"
+    
+#     @property
+#     def model(self):
+#         return self.__model
+    
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand, model)
+#         self.battery_size = battery_size
+
+#     def fuel_type(self):
+#         return "Electirc charge"
+    
+# my_car = Car("Tata", "Safari")
+# my_car.model = "City"
+# Car("Tata", "Nexon")
+# # print(my_car.model())
+# print(my_car.model)
+
+
+# 9. Class Inheritance and isinstance() Function
 class Car():
     def __init__(self, brand, model):
         self.brand = brand
-        self.model = model
+        self.__model = model
 
     def for_all(self):
-        return f"{self.brand} {self.model}"
+        return f"{self.brand} {self.__model}"
     
     @staticmethod
     def genral_discription():
@@ -142,6 +208,10 @@ class Car():
 
     def fuel_type(self):
         return "Electric discharge"
+    
+    @property
+    def model(self):
+        return self.__model
     
 class ElectricCar(Car):
     def __init__(self, brand, model, battery_size):
@@ -152,9 +222,7 @@ class ElectricCar(Car):
         return "Electirc charge"
     
 my_car = Car("Tata", "Safari")
-# print(my_car.genral_discription())
-print(Car.genral_discription())
-    
+Car("Tata", "Nexon")
 
 
 
