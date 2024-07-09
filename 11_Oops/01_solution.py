@@ -96,20 +96,53 @@
 
 # 6. Class Variables
 
-class Car:
-    total_car = 0
+# class Car:
+#     total_car = 0
 
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.model = model
+#         Car.total_car += 1
+    
+#     def full_name(self):
+#         return f"{self.brand} {self.model}"
+    
+#     def fuel_type(self):
+#         return "Petrol or Disel"
+        
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand, model)
+#         self.battery_size = battery_size
+
+#     def fuel_type(self):
+#         return "Electirc charge"
+
+# safari = Car("Tata", "Safari")
+# safari_two = Car("Tata", "Nexon")
+# # print(safari.total_car)
+# # test = Car("test", "test")
+# # print(safari.total_car)
+# print(Car.total_car)
+
+# 7. Static Method
+
+class Car():
     def __init__(self, brand, model):
         self.brand = brand
         self.model = model
-        Car.total_car += 1
-    
-    def full_name(self):
+
+    def for_all(self):
         return f"{self.brand} {self.model}"
     
+    @staticmethod
+    def genral_discription():
+        return "Cars are means of transport"
+     
+
     def fuel_type(self):
-        return "Petrol or Disel"
-        
+        return "Electric discharge"
+    
 class ElectricCar(Car):
     def __init__(self, brand, model, battery_size):
         super().__init__(brand, model)
@@ -117,14 +150,11 @@ class ElectricCar(Car):
 
     def fuel_type(self):
         return "Electirc charge"
-
-safari = Car("Tata", "Safari")
-safari_two = Car("Tata", "Nexon")
-# print(safari.total_car)
-# test = Car("test", "test")
-# print(safari.total_car)
-print(Car.total_car)
-
+    
+my_car = Car("Tata", "Safari")
+# print(my_car.genral_discription())
+print(Car.genral_discription())
+    
 
 
 
