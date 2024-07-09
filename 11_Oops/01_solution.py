@@ -221,9 +221,9 @@ class ElectricCar(Car):
     def fuel_type(self):
         return "Electirc charge"
     
-my_car = Car("Tata", "Safari")
-Car("Tata", "Nexon")
-
+my_tesla = ElectricCar("Tesla", "Model S", "85Kwh")
+print(isinstance(my_tesla, Car))
+print(isinstance(my_tesla, ElectricCar))
 
 
 
