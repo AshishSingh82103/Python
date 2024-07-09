@@ -50,7 +50,7 @@
 
 # 4. (Encapsulation)
 
-# class Car1():
+# class Car1:
 #     def __init__(self, brand, model):
 #         self.__brand = brand
 #         self.model = model
@@ -127,7 +127,7 @@
 
 # 7. Static Method
 
-# class Car():
+# class Car:
 #     def __init__(self, brand, model):
 #         self.brand = brand
 #         self.model = model
@@ -157,7 +157,7 @@
 
 
 # 8. Property Decorators
-# class Car():
+# class Car:
 #     def __init__(self, brand, model):
 #         self.brand = brand
 #         self.__model = model
@@ -193,6 +193,40 @@
 
 
 # 9. Class Inheritance and isinstance() Function
+# class Car:
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.__model = model
+
+#     def for_all(self):
+#         return f"{self.brand} {self.__model}"
+    
+#     @staticmethod
+#     def genral_discription():
+#         return "Cars are means of transport"
+     
+
+#     def fuel_type(self):
+#         return "Electric discharge"
+    
+#     @property
+#     def model(self):
+#         return self.__model
+    
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand, model)
+#         self.battery_size = battery_size
+
+#     def fuel_type(self):
+#         return "Electirc charge"
+    
+# my_tesla = ElectricCar("Tesla", "Model S", "85Kwh")
+# print(isinstance(my_tesla, Car))
+# print(isinstance(my_tesla, ElectricCar))
+
+
+# 10. Multiple Inheritance
 class Car():
     def __init__(self, brand, model):
         self.brand = brand
@@ -221,10 +255,20 @@ class ElectricCar(Car):
     def fuel_type(self):
         return "Electirc charge"
     
-my_tesla = ElectricCar("Tesla", "Model S", "85Kwh")
-print(isinstance(my_tesla, Car))
-print(isinstance(my_tesla, ElectricCar))
+class Battery:
+    def battery_info(self):
+        return "This is battery"
 
+class Engine:
+    def engine_info(self):
+        return "This is engine"
+
+class ElectricCarTwo(Battery, Engine, Car):
+    pass
+
+my_new_tesla = ElectricCarTwo("Tesla", "Model S")
+print(my_new_tesla.battery_info())
+print(my_new_tesla.engine_info())
 
 
 
