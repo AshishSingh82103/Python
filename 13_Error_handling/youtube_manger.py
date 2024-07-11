@@ -2,12 +2,14 @@ import json
 def load_data():
     try:
         with open('youtube.txt', 'r') as file:
-            return json.load(file)
+            test = json.load(file)
+            print(type(test))
+            return test
     except FileNotFoundError:
         return []
     
 def save_data_helper(videos):
-    with open('youtbue.txt', 'w') as file:
+    with open('youtube.txt', 'w') as file:
         json.dump(videos, file)
 
 def list_all_videos(videos):
@@ -19,7 +21,7 @@ def add_video(videos):
     name = input("Enter video name: ")
     time = input("Enter video time: ")
     videos.append({'name': name, 'time': time})
-    save_data_helper()
+    save_data_helper(videos)
 
 def update_video(videos):
     pass
@@ -36,7 +38,7 @@ def main():
         print("3. Update a youtube video details ")
         print("4. Delete a youtube video ")
         print("4. Exit the app ")
-        choice = input("Enter your choice")
+        choice = input("Enter your choice ")
         print(videos)
 
         match choice:
